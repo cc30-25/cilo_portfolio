@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cilo Chou - UI/UX Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f4f4f4;
+        }
+        header {
+            background: linear-gradient(45deg, #41327a, #314796);
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 2rem;
+            max-width: 1100px;
+            margin: auto;
+        }
+        .hero {
+            text-align: center;
+            background: url('https://via.placeholder.com/1500x400') no-repeat center center/cover;
+            color: #fff;
+            padding: 4rem 0;
+        }
+        .about-container {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .about-container img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 3px solid #314796;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .project {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #fff;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .project:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem 0;
+            background: #333;
+            color: #fff;
+        }
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            text-align: center;
+        }
+        .skills-container h3 {
+            font-size: 1.5rem;
+            color: #314796;
+            margin-bottom: 0.5rem;
+        }
+        .skills-container p {
+            font-size: 1rem;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cilo Chou</h1>
+        <p>Software Engineer | UI/UX Designer | Firmware Engineer</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
+        <h2>About</h2>
+        <div class="about-container">
+            <!-- <img src="https://via.placeholder.com/150" alt="Cilo Chou's Selfie"> -->
+            <!-- <img src="/mnt/data/5e564280c6cbabce353d10dd70eb907f.jpg" alt="Cilo Chou's Selfie" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%; border: 3px solid #314796; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);"> -->
+            <a href="https://imgbb.com/"><img src="https://i.ibb.co/s25rD9X/5e564280c6cbabce353d10dd70eb907f.jpg" alt="Cilo Chou's Selfie" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%; border: 3px solid #314796; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);" border="0"></a>
+            <div>
+                <p>Hello world, I'm Cilo Chou (she/her), a software engineering student at the University of Waterloo. Passionate about software and tech.</p>
+                <p>I am especially interested in robotics design, video game platform development, and potential utilization of machine learning.</p>
+                <p>In my free time, you may find me playing basketball, reading a book, or simply spending time with my loved ones.</p>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <a href="https://imgbb.com/"><img src="https://i.ibb.co/BnYXD7F/edited-project-image.png" alt="edited-project-image" border="0"></a>
+                <h3><a href="https://youtu.be/AmgyuHuDhrY?si=qRepFwkJliCDyw4T" target="_blank">Musical Keyboard </a></h3>
+                <p></p>
+                <p>a functioning keyboard with thirteen buttons acting as keys that play sound through a speaker when pressed</p>
+                <p>Each button plays a specific note in the fifth octave according to its position on the breadboard, and with a collection of thirteen buttons, the entirety of the fifth octave can be played.</p>
+                <p>capable of connecting to any speaker using BLuetooth with a custom 3D-printed-case</p>
+            </div>
+            <!-- </div>
+            <div class="project">
+                <img src="" alt="Project 2 Screenshot">
+                <h3><a href="details/mobile-app-prototype.html" target="_blank">Mobile App Prototype</a></h3>
+                <p>Designed and prototyped a mobile application for task management.</p>
+            </div> -->
+            <!-- <div class="project">
+                <<img src="/mnt/data/Screenshot 2025-01-06 at 5.10.16 PM.png" alt="Project 2 Screenshot" style="width: 100%; max-width: 300px; height: auto; display: block; margin: auto;"> -->
+                <!-- <a href="https://ibb.co/py9Zrdt"><img src="https://i.ibb.co/WtYFpfb/Screenshot-2025-01-06-at-5-10-16-PM.png" alt="Screenshot-2025-01-06-at-5-10-16-PM" style="width: 100%; max-width: 300px; height: auto; display: block; margin: auto;"> border="0"></a>
+                <h3><a href="details/mobile-app-prototype.html" target="_blank">Mobile App Prototype</a></h3>
+                <p>Designed and prototyped a mobile application for task management.</p> -->
+            <!-- </div> --> 
+            <div class="project">
+                <a href="https://ibb.co/py9Zrdt"><img src="https://i.ibb.co/WtYFpfb/Screenshot-2025-01-06-at-5-10-16-PM.png" alt="Screenshot-2025-01-06-at-5-10-16-PM" style="width: 100%; max-width: 600px; height: 400px; display: block; margin: auto;">
+                <h3><a href="https://average-salary-hyo3ljjrl-lisas-projects-2d29a392.vercel.app" target="_blank">Wage Comparision Web App</a></h3>
+                <p>a responsive, user-centric wage comparison web application using Python, HTML, CSS, JavaScript, and React, intgerated with real-time data</p>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <h3>Coding Languages</h3>
+                <p>C, C++, HTML/CSS, Python, JavaScript</p>
+            </div>
+            <div class="skill">
+                <h3>Tools</h3>
+                <p>SolidWorks, Unity, Figma, Adobe</p>
+            </div>
+            <div class="skill">
+                <h3>Technical Skills</h3>
+                <p>RTOS Design, UI Design, AutoCAD, Automated Testing, iOS Development, Data Analysis</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:m69zhou@uwaterloo.ca">m69zhou@uwaterloo.ca</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/cilo-chou-2b804728b" target="_blank">linkedin.com/in/cilo-chou</a></p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Cilo Chou. Designed and Developed with ♥.</p>
+    </footer>
+</body>
+</html>
